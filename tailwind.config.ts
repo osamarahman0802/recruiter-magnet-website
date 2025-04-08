@@ -91,17 +91,33 @@ export default {
 				'slide-in': {
 					from: { transform: 'translateX(-20px)', opacity: '0' },
 					to: { transform: 'translateX(0)', opacity: '1' }
+				},
+				'pulse': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
-				'slide-in': 'slide-in 0.5s ease-out'
+				'slide-in': 'slide-in 0.5s ease-out',
+				'pulse': 'pulse 3s infinite'
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'hero-pattern': 'linear-gradient(to right, #0F2C59, #1A5F7A)',
+				'grid-pattern': 'linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)',
+			},
+			backgroundSize: {
+				'grid': '20px 20px',
+			},
+			boxShadow: {
+				'neon': '0 0 5px rgba(248, 203, 46, 0.5), 0 0 20px rgba(248, 203, 46, 0.3)',
+				'glass': '0 4px 30px rgba(0, 0, 0, 0.1)'
+			},
+			backdropBlur: {
+				'xs': '2px',
 			}
 		}
 	},
