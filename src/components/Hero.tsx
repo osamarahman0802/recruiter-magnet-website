@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowDown, ChevronRight } from 'lucide-react';
+import { ArrowDown, ChevronRight, Download } from 'lucide-react';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -22,8 +22,13 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-gradient-to-r from-navy to-softBlue"
     >
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute inset-0 bg-grid-pattern bg-grid opacity-10"></div>
       <div className="absolute inset-0 bg-gradient-to-tr from-navy via-transparent to-transparent opacity-80"></div>
+      
+      {/* Decorative elements */}
+      <div className="absolute top-20 right-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-80 h-80 bg-softBlue/20 rounded-full blur-3xl"></div>
+      
       <div className="container mx-auto px-4 z-10 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-white animate-fade-in">
@@ -49,11 +54,11 @@ const Hero = () => {
                 <ChevronRight className="ml-1 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button 
-                onClick={scrollToAbout}
                 variant="outline"
-                className="border-white text-white hover:text-navy hover:bg-white px-8 py-6 text-lg backdrop-blur-sm bg-white/10"
+                className="border-white text-white hover:text-navy hover:bg-white px-8 py-6 text-lg backdrop-blur-sm bg-white/10 group"
               >
-                Learn More
+                Download CV
+                <Download className="ml-2 h-5 w-5 transition-transform group-hover:-translate-y-1" />
               </Button>
             </div>
           </div>
@@ -62,7 +67,7 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-to-tr from-gold to-softBlue opacity-30 blur-xl rounded-full animate-pulse"></div>
               <div className="relative rounded-full w-80 h-80 overflow-hidden border-2 border-white/30 shadow-xl backdrop-blur-sm">
                 <img 
-                  src="/lovable-uploads/338e74ca-4682-4aa3-b36d-f9351a6605b9.png"
+                  src="/lovable-uploads/94df2c31-edad-484c-b2be-40d44fcb865f.png"
                   alt="Osama Rahman"
                   className="object-cover w-full h-full"
                 />
@@ -73,6 +78,7 @@ const Hero = () => {
           </div>
         </div>
         
+        {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button 
             onClick={scrollToAbout}
