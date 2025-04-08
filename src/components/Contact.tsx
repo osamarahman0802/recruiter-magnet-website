@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Linkedin, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -58,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-navy">Email</h3>
-                  <p className="text-gray-700">osama.rahman@example.com</p>
+                  <p className="text-gray-700">rahman.osama@outlook.com</p>
                 </div>
               </div>
               

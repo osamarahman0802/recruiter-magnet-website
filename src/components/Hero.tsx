@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 
@@ -55,7 +54,7 @@ const Hero = () => {
           <div className="hidden md:flex justify-center">
             <div className="relative rounded-full w-80 h-80 overflow-hidden border-4 border-white shadow-xl">
               <img 
-                src="/lovable-uploads/94df2c31-edad-484c-b2be-40d44fcb865f.png"
+                src="/lovable-uploads/338e74ca-4682-4aa3-b36d-f9351a6605b9.png"
                 alt="Osama Rahman"
                 className="object-cover w-full h-full"
               />
