@@ -1,0 +1,100 @@
+
+import { BadgeCheck } from 'lucide-react';
+
+const Skills = () => {
+  const skillCategories = [
+    {
+      category: "Sales & Marketing",
+      skills: [
+        "Sales Management", 
+        "Business Development", 
+        "Customer Relationship Management (CRM)", 
+        "Marketing Strategy",
+        "International Trade",
+        "Lead Generation",
+        "Negotiation",
+        "Pricing Strategy",
+        "Market Research"
+      ]
+    },
+    {
+      category: "Management",
+      skills: [
+        "Team Leadership", 
+        "Project Management", 
+        "Strategic Planning",
+        "Cross-functional Team Management",
+        "Performance Analysis",
+        "Business Strategy"
+      ]
+    },
+    {
+      category: "Technical",
+      skills: [
+        "Salesforce", 
+        "Zoho CRM", 
+        "Supply Chain Management",
+        "Import/Export Operations",
+        "Logistics Management"
+      ]
+    },
+    {
+      category: "Languages",
+      skills: [
+        "English (Professional)",
+        "Hindi (Native)",
+        "Urdu (Professional)",
+        "Chinese (Elementary)"
+      ]
+    }
+  ];
+
+  return (
+    <section id="skills" className="py-24 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="section-heading">Skills & Expertise</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {skillCategories.map((category, index) => (
+            <div key={index} className="animate-fade-in" style={{animationDelay: `${index * 150}ms`}}>
+              <h3 className="text-2xl font-bold text-softBlue mb-4">{category.category}</h3>
+              <div className="bg-softGray p-6 rounded-lg">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {category.skills.map((skill, i) => (
+                    <div key={i} className="flex items-center">
+                      <BadgeCheck className="h-5 w-5 text-gold mr-2 flex-shrink-0" />
+                      <span className="text-gray-700">{skill}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-softBlue mb-6">Key Achievements</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-lightBlue rounded-lg p-6 text-center">
+              <div className="text-4xl font-bold text-navy mb-2">₹2.6+</div>
+              <div className="text-xl text-softBlue">Crores Deal</div>
+              <p className="mt-2 text-gray-700">With leading laser machine manufacturer</p>
+            </div>
+            <div className="bg-lightBlue rounded-lg p-6 text-center">
+              <div className="text-4xl font-bold text-navy mb-2">35%</div>
+              <div className="text-xl text-softBlue">Sales Increase</div>
+              <p className="mt-2 text-gray-700">Through strategic pricing restructuring</p>
+            </div>
+            <div className="bg-lightBlue rounded-lg p-6 text-center">
+              <div className="text-4xl font-bold text-navy mb-2">12%</div>
+              <div className="text-xl text-softBlue">Margin Growth</div>
+              <p className="mt-2 text-gray-700">With innovative three-tiered pricing model</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
