@@ -3,6 +3,59 @@ import { Calendar, GraduationCap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Education = () => {
+  const certifications = [
+    {
+      name: "Fundamentals of Accounting Specialization",
+      issuer: "Coursera",
+      date: "2023",
+      duration: "2 months",
+      skills: ["Accounting", "Financial Analysis"]
+    },
+    {
+      name: "Fundamentals of Credit",
+      issuer: "Finance Academy",
+      date: "2023",
+      skills: ["Credit Analysis", "Risk Assessment"]
+    },
+    {
+      name: "Meta Ads & Lead Generation Training",
+      issuer: "Meta",
+      date: "2023",
+      duration: "2 months",
+      skills: ["Digital Marketing", "Lead Generation", "Social Media Marketing"]
+    },
+    {
+      name: "The Complete Financial Analyst Course",
+      issuer: "Udemy",
+      date: "2022",
+      skills: ["Financial Analysis", "Valuation", "Financial Modeling"]
+    },
+    {
+      name: "Certified Credit Professional",
+      issuer: "Credit Institute",
+      date: "Pursuing",
+      skills: ["Credit Management", "Risk Analysis"]
+    },
+    {
+      name: "Salesforce for Admins",
+      issuer: "LinkedIn",
+      date: "Jan 2025",
+      skills: ["Salesforce.com Administration"]
+    },
+    {
+      name: "Salesforce for Sales Managers",
+      issuer: "LinkedIn",
+      date: "Jan 2025",
+      skills: ["Salesforce.com"]
+    },
+    {
+      name: "Learning Zoho CRM",
+      issuer: "LinkedIn",
+      date: "Jan 2025",
+      skills: ["Zoho CRM"]
+    }
+  ];
+
   const education = [
     {
       school: "Shanxi University of Finance and Economics",
@@ -38,27 +91,6 @@ const Education = () => {
     },
   ];
   
-  const certifications = [
-    {
-      name: "Salesforce for Admins",
-      issuer: "LinkedIn",
-      date: "Jan 2025",
-      skills: ["Salesforce.com Administration"]
-    },
-    {
-      name: "Salesforce for Sales Managers",
-      issuer: "LinkedIn",
-      date: "Jan 2025",
-      skills: ["Salesforce.com"]
-    },
-    {
-      name: "Learning Zoho CRM",
-      issuer: "LinkedIn",
-      date: "Jan 2025",
-      skills: ["Zoho CRM"]
-    }
-  ];
-
   return (
     <section id="education" className="py-24 bg-softGray">
       <div className="container mx-auto px-4">
@@ -108,12 +140,13 @@ const Education = () => {
             <h3 className="text-2xl font-bold text-softBlue mb-6">Certifications</h3>
             <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <Card key={index} className="animate-fade-in" style={{animationDelay: `${(index + 4) * 150}ms`}}>
+                <Card key={index} className="animate-fade-in hover:shadow-lg transition-all" style={{animationDelay: `${(index) * 150}ms`}}>
                   <CardContent className="p-4">
                     <h4 className="text-lg font-bold text-navy">{cert.name}</h4>
                     <p className="text-gray-600">{cert.issuer}</p>
                     <div className="flex justify-between items-center mt-2">
                       <p className="text-sm text-gray-600">{cert.date}</p>
+                      {cert.duration && <p className="text-sm text-gold font-medium">{cert.duration}</p>}
                     </div>
                     <div className="mt-2 flex flex-wrap gap-2">
                       {cert.skills.map((skill, i) => (

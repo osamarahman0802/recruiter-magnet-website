@@ -14,37 +14,47 @@ const Skills = () => {
         "Lead Generation",
         "Negotiation",
         "Pricing Strategy",
-        "Market Research"
+        "Market Research",
+        "Client Acquisition",
+        "Sales Strategies"
       ]
     },
     {
-      category: "Management",
+      category: "Management & Analysis",
       skills: [
         "Team Leadership", 
         "Project Management", 
         "Strategic Planning",
         "Cross-functional Team Management",
         "Performance Analysis",
-        "Business Strategy"
+        "Business Strategy",
+        "Financial Statement Analysis",
+        "Risk Management",
+        "Critical Thinking"
       ]
     },
     {
-      category: "Technical",
+      category: "Technical Skills",
       skills: [
         "Salesforce", 
         "Zoho CRM", 
         "Supply Chain Management",
         "Import/Export Operations",
-        "Logistics Management"
+        "Logistics Management",
+        "MS Excel",
+        "MS Word",
+        "MS PowerPoint",
+        "AI Agents"
       ]
     },
     {
-      category: "Languages",
+      category: "Languages & Communication",
       skills: [
         "English (Professional)",
         "Hindi (Native)",
         "Urdu (Professional)",
-        "Chinese (Elementary)"
+        "Chinese (Elementary)",
+        "Excellent Communication"
       ]
     }
   ];
@@ -58,12 +68,12 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div key={index} className="animate-fade-in" style={{animationDelay: `${index * 150}ms`}}>
               <h3 className="text-2xl font-bold text-softBlue mb-4">{category.category}</h3>
-              <div className="bg-softGray p-6 rounded-lg">
+              <div className="bg-softGray p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {category.skills.map((skill, i) => (
-                    <div key={i} className="flex items-center">
-                      <BadgeCheck className="h-5 w-5 text-gold mr-2 flex-shrink-0" />
-                      <span className="text-gray-700">{skill}</span>
+                    <div key={i} className="flex items-center group">
+                      <BadgeCheck className="h-5 w-5 text-gold mr-2 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                      <span className="text-gray-700 group-hover:text-navy transition-colors">{skill}</span>
                     </div>
                   ))}
                 </div>
@@ -75,17 +85,17 @@ const Skills = () => {
         <div className="mt-16">
           <h3 className="text-2xl font-bold text-softBlue mb-6">Key Achievements</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-lightBlue rounded-lg p-6 text-center">
+            <div className="bg-lightBlue rounded-lg p-6 text-center hover:shadow-lg transition-all hover:scale-105">
               <div className="text-4xl font-bold text-navy mb-2">₹2.6+</div>
               <div className="text-xl text-softBlue">Crores Deal</div>
               <p className="mt-2 text-gray-700">With leading laser machine manufacturer</p>
             </div>
-            <div className="bg-lightBlue rounded-lg p-6 text-center">
+            <div className="bg-lightBlue rounded-lg p-6 text-center hover:shadow-lg transition-all hover:scale-105">
               <div className="text-4xl font-bold text-navy mb-2">35%</div>
               <div className="text-xl text-softBlue">Sales Increase</div>
               <p className="mt-2 text-gray-700">Through strategic pricing restructuring</p>
             </div>
-            <div className="bg-lightBlue rounded-lg p-6 text-center">
+            <div className="bg-lightBlue rounded-lg p-6 text-center hover:shadow-lg transition-all hover:scale-105">
               <div className="text-4xl font-bold text-navy mb-2">12%</div>
               <div className="text-xl text-softBlue">Margin Growth</div>
               <p className="mt-2 text-gray-700">With innovative three-tiered pricing model</p>

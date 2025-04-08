@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,12 +62,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				navy: '#0F2C59',
-				gold: '#F8CB2E',
-				softBlue: '#1A5F7A',
-				lightBlue: '#E2F6FF',
-				charcoal: '#333333',
-				softGray: '#F6F6F7',
+				navy: '#172554',
+				gold: '#F59E0B',
+				softBlue: '#3B82F6',
+				lightBlue: '#EFF6FF',
+				charcoal: '#1E293B',
+				softGray: '#F8FAFC',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -122,7 +121,10 @@ export default {
 				'glow': 'glow 3s infinite',
 				'float': 'float 6s ease-in-out infinite',
 				'ripple': 'ripple 1s linear forwards',
-				'border-flow': 'border-flow 3s ease infinite'
+				'border-flow': 'border-flow 3s ease infinite',
+				'float-slow': 'float 8s ease-in-out infinite',
+				'pulse-subtle': 'pulse 4s infinite ease-in-out',
+				'slide-up': 'fade-in 0.6s ease-out, translateY(20px) translateY(0)'
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -130,7 +132,8 @@ export default {
 				'grid-pattern': 'linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)',
 				'futuristic-gradient': 'linear-gradient(135deg, #0F2C59 0%, #1A5F7A 50%, #0F2C59 100%)',
 				'glass-shine': 'linear-gradient(125deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 40%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.05) 60%, rgba(255,255,255,0) 100%)',
-				'gold-gradient': 'linear-gradient(90deg, #F8CB2E, #F5A623, #F8CB2E)'
+				'gold-gradient': 'linear-gradient(90deg, #F8CB2E, #F5A623, #F8CB2E)',
+				'modern-gradient': 'linear-gradient(135deg, #172554 0%, #3B82F6 100%)'
 			},
 			backgroundSize: {
 				'grid': '20px 20px',

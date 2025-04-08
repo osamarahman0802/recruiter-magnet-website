@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, Calendar } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Calendar, Github, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -58,7 +58,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Email</h3>
-                  <p className="text-white/80">rahman.osama@outlook.com</p>
+                  <a href="mailto:rahman.osama@outlook.com" className="text-white/80 hover:text-gold transition-colors">
+                    rahman.osama@outlook.com
+                  </a>
                 </div>
               </div>
               
@@ -68,7 +70,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-white">Phone</h3>
-                  <p className="text-white/80">+91 98765 43210</p>
+                  <p className="text-white/80">India: <a href="tel:+919886076428" className="hover:text-gold transition-colors">+91 9886076428</a></p>
+                  <p className="text-white/80">China: <a href="tel:+8619575057548" className="hover:text-gold transition-colors">+86 19575057548</a></p>
                 </div>
               </div>
               
@@ -96,6 +99,33 @@ const Contact = () => {
                   >
                     linkedin.com/in/osama-rahman-297197ab
                   </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start backdrop-blur-sm bg-white/10 p-4 rounded-lg transition-all hover:bg-white/20 hover:shadow-md">
+                <div className="bg-gold/20 p-3 rounded-full mr-4">
+                  <Github className="h-6 w-6 text-gold" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-white">GitHub</h3>
+                  <a 
+                    href="https://github.com/osamarahman0802" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gold hover:underline transition-all"
+                  >
+                    github.com/osamarahman0802
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start backdrop-blur-sm bg-white/10 p-4 rounded-lg transition-all hover:bg-white/20 hover:shadow-md">
+                <div className="bg-gold/20 p-3 rounded-full mr-4">
+                  <MessageCircle className="h-6 w-6 text-gold" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-white">WeChat</h3>
+                  <p className="text-white/80">ID: OsamaRahman0802</p>
                 </div>
               </div>
               
@@ -168,7 +198,7 @@ const Contact = () => {
               
               <Button 
                 type="submit" 
-                className="bg-gold hover:bg-amber-500 text-navy font-medium w-full flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg"
+                className="bg-gold hover:bg-amber-500 text-navy font-medium w-full flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
                 Send Message
                 <Send className="h-4 w-4" />

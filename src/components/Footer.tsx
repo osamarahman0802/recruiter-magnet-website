@@ -1,5 +1,5 @@
 
-import { Heart } from 'lucide-react';
+import { Heart, Linkedin, Github, Mail, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,43 +12,77 @@ const Footer = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="backdrop-blur-sm bg-white/5 p-6 rounded-lg border border-white/10">
+          <div className="backdrop-blur-sm bg-white/5 p-6 rounded-lg border border-white/10 hover:bg-white/10 transition-all">
             <h3 className="text-xl font-bold mb-4 text-gold">Osama Rahman</h3>
             <p className="text-gray-300 mb-4">
               International Sales Professional specializing in business development and global market expansion.
-            </p>
-          </div>
-          
-          <div className="backdrop-blur-sm bg-white/5 p-6 rounded-lg border border-white/10">
-            <h3 className="text-xl font-bold mb-4 text-gold">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-300 hover:text-gold transition-colors">Home</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-gold transition-colors">About</a></li>
-              <li><a href="#experience" className="text-gray-300 hover:text-gold transition-colors">Experience</a></li>
-              <li><a href="#skills" className="text-gray-300 hover:text-gold transition-colors">Skills</a></li>
-              <li><a href="#education" className="text-gray-300 hover:text-gold transition-colors">Education</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-gold transition-colors">Contact</a></li>
-            </ul>
-          </div>
-          
-          <div className="backdrop-blur-sm bg-white/5 p-6 rounded-lg border border-white/10">
-            <h3 className="text-xl font-bold mb-4 text-gold">Let's Connect</h3>
-            <p className="text-gray-300 mb-4">
-              Looking for opportunities in sales management and business development.
             </p>
             <div className="flex space-x-4">
               <a 
                 href="https://www.linkedin.com/in/osama-rahman-297197ab" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full text-white hover:text-gold transition-all"
+                className="bg-white/10 hover:bg-gold p-2 rounded-full text-white hover:text-navy transition-all"
                 aria-label="LinkedIn"
               >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                </svg>
+                <Linkedin className="h-5 w-5" />
               </a>
+              <a 
+                href="https://github.com/osamarahman0802" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-gold p-2 rounded-full text-white hover:text-navy transition-all"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              <a 
+                href="mailto:rahman.osama@outlook.com" 
+                className="bg-white/10 hover:bg-gold p-2 rounded-full text-white hover:text-navy transition-all"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+              <div 
+                className="bg-white/10 hover:bg-gold p-2 rounded-full text-white hover:text-navy transition-all cursor-pointer"
+                title="WeChat ID: OsamaRahman0802"
+              >
+                <MessageCircle className="h-5 w-5" />
+              </div>
             </div>
+          </div>
+          
+          <div className="backdrop-blur-sm bg-white/5 p-6 rounded-lg border border-white/10 hover:bg-white/10 transition-all">
+            <h3 className="text-xl font-bold mb-4 text-gold">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#home" className="text-gray-300 hover:text-gold transition-colors flex items-center"><span className="mr-2">→</span>Home</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-gold transition-colors flex items-center"><span className="mr-2">→</span>About</a></li>
+              <li><a href="#experience" className="text-gray-300 hover:text-gold transition-colors flex items-center"><span className="mr-2">→</span>Experience</a></li>
+              <li><a href="#skills" className="text-gray-300 hover:text-gold transition-colors flex items-center"><span className="mr-2">→</span>Skills</a></li>
+              <li><a href="#education" className="text-gray-300 hover:text-gold transition-colors flex items-center"><span className="mr-2">→</span>Education</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-gold transition-colors flex items-center"><span className="mr-2">→</span>Contact</a></li>
+            </ul>
+          </div>
+          
+          <div className="backdrop-blur-sm bg-white/5 p-6 rounded-lg border border-white/10 hover:bg-white/10 transition-all">
+            <h3 className="text-xl font-bold mb-4 text-gold">Contact Info</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <Mail className="h-5 w-5 text-gold mt-1 mr-2" />
+                <span className="text-gray-300">rahman.osama@outlook.com</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gold mt-1 mr-2"><path d="M13 2H3v18h18V11"></path><path d="m22 2-8.4 8.4"></path><path d="M22 8.5V2h-6.5"></path></svg>
+                <div>
+                  <p className="text-gray-300">India: +91 9886076428</p>
+                  <p className="text-gray-300">China: +86 19575057548</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <MessageCircle className="h-5 w-5 text-gold mt-1 mr-2" />
+                <span className="text-gray-300">WeChat ID: OsamaRahman0802</span>
+              </li>
+            </ul>
           </div>
         </div>
         

@@ -92,26 +92,26 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    background: linear-gradient(135deg, #0F2C59 0%, #1A5F7A 100%);
+    background: linear-gradient(135deg, #172554 0%, #1E40AF 100%);
     min-height: 100vh;
   }
 
   /* Modern scrollbar styling */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-navy/30;
+    @apply bg-navy/20;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gold/60 rounded-full;
-    border: 2px solid transparent;
+    @apply bg-gold/80 rounded-full;
+    border: 1px solid transparent;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gold/80;
+    @apply bg-gold;
   }
 }
 
@@ -123,14 +123,14 @@
 .section-heading::after {
   content: '';
   @apply absolute left-0 -bottom-2 h-1 w-20 bg-gold;
-  background: linear-gradient(90deg, #F8CB2E, #F5A623, #F8CB2E);
+  background: linear-gradient(90deg, #F59E0B, #FBBF24, #F59E0B);
   background-size: 200% 100%;
   animation: border-flow 3s ease infinite;
 }
 
 /* Experience card styling */
 .experience-card {
-  @apply relative transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  @apply relative transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
 }
 
 .experience-card::before {
@@ -144,11 +144,11 @@
 
 /* Skill tag styling */
 .skill-tag {
-  @apply bg-lightBlue/40 backdrop-blur-sm text-navy py-1 px-3 rounded-full text-sm font-medium transition-all border border-navy/10;
+  @apply bg-lightBlue/60 backdrop-blur-sm text-navy py-1 px-3 rounded-full text-sm font-medium transition-all border border-navy/10;
 }
 
 .skill-tag:hover {
-  @apply bg-softBlue text-white shadow-sm transform scale-105;
+  @apply bg-softBlue text-white shadow-md transform scale-105;
 }
 
 /* Navigation link styling */
@@ -175,11 +175,11 @@
 
 /* Glass morphism */
 .glass {
-  @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-glass;
+  @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg;
 }
 
 .glass-dark {
-  @apply bg-navy/30 backdrop-blur-md border border-white/10 shadow-glass;
+  @apply bg-navy/30 backdrop-blur-md border border-white/10 shadow-lg;
 }
 
 .glass-card {
@@ -188,11 +188,43 @@
 
 /* Neon text */
 .neon-text {
-  text-shadow: 0 0 5px rgba(248, 203, 46, 0.5), 0 0 10px rgba(248, 203, 46, 0.3);
+  text-shadow: 0 0 5px rgba(245, 158, 11, 0.7), 0 0 10px rgba(245, 158, 11, 0.5);
 }
 
 /* Gradient text */
 .gradient-text {
   @apply text-transparent bg-clip-text;
-  background-image: linear-gradient(90deg, #F8CB2E, #F5A623);
+  background-image: linear-gradient(90deg, #F59E0B, #FBBF24);
+}
+
+/* Improved animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(245, 158, 11, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.8); }
+}
+
+@keyframes slide-in-bottom {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Social media icons */
+.social-icon {
+  @apply p-2 rounded-full bg-white/10 hover:bg-gold/80 transition-all duration-300 text-white hover:text-navy transform hover:scale-110;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .section-heading {
+    @apply text-2xl;
+  }
+  
+  .container {
+    @apply px-4;
+  }
 }
