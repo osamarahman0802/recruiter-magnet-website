@@ -85,19 +85,19 @@ const Skills = () => {
           <h3 className="text-2xl font-bold text-softBlue mb-6">Key Achievements</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-lightBlue rounded-lg p-6 text-center hover:shadow-lg transition-all hover:scale-105">
-              <div className="text-4xl font-bold text-navy mb-2">₹2.6+</div>
-              <div className="text-xl text-softBlue">Crores Deal</div>
-              <p className="mt-2 text-gray-700">With leading laser machine manufacturer</p>
+              <div className="text-4xl font-bold text-navy mb-2">₹45.8L+</div>
+              <div className="text-xl text-softBlue">Revenue Generated</div>
+              <p className="mt-2 text-gray-700">Through sales of rice mills and sprayers</p>
             </div>
             <div className="bg-lightBlue rounded-lg p-6 text-center hover:shadow-lg transition-all hover:scale-105">
-              <div className="text-4xl font-bold text-navy mb-2">35%</div>
-              <div className="text-xl text-softBlue">Sales Increase</div>
-              <p className="mt-2 text-gray-700">Through strategic pricing restructuring</p>
+              <div className="text-4xl font-bold text-navy mb-2">26+</div>
+              <div className="text-xl text-softBlue">New Clients</div>
+              <p className="mt-2 text-gray-700">Including cooperatives and FPOs</p>
             </div>
             <div className="bg-lightBlue rounded-lg p-6 text-center hover:shadow-lg transition-all hover:scale-105">
-              <div className="text-4xl font-bold text-navy mb-2">12%</div>
-              <div className="text-xl text-softBlue">Margin Growth</div>
-              <p className="mt-2 text-gray-700">With innovative three-tiered pricing model</p>
+              <div className="text-4xl font-bold text-navy mb-2">15%</div>
+              <div className="text-xl text-softBlue">Increase in Business</div>
+              <p className="mt-2 text-gray-700">Through customized solutions and consultative selling</p>
             </div>
           </div>
         </div>
