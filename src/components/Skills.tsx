@@ -85,7 +85,7 @@ const Skills = () => {
           <h3 className="text-2xl font-bold text-softBlue mb-6">Key Achievements</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-lightBlue rounded-lg p-6 text-center hover:shadow-lg transition-all hover:scale-105">
-              <div className="text-4xl font-bold text-navy mb-2">₹45.8L+</div>
+              <div className="text-4xl font-bold text-navy mb-2">Rs 3.058 Cr</div>
               <div className="text-xl text-softBlue">Revenue Generated</div>
               <p className="mt-2 text-gray-700">Through sales of rice mills and sprayers</p>
             </div>
@@ -107,3 +107,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
