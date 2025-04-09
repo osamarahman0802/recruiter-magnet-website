@@ -17,6 +17,16 @@ const Hero = () => {
     }
   };
 
+  const handleDownloadCV = () => {
+    // Create a link to download the CV
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/c0881f4e-f23e-4ae5-8759-20c5072c8be7.png';
+    link.download = 'Osama-Rahman-CV.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -55,6 +65,7 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline"
+                onClick={handleDownloadCV}
                 className="border-white text-white hover:text-navy hover:bg-white px-8 py-6 text-lg backdrop-blur-sm bg-white/10 group"
               >
                 Download CV
