@@ -7,7 +7,7 @@ const Education = () => {
     {
       name: "Fundamentals of Accounting Specialization",
       issuer: "Coursera",
-      date: "2023",
+      date: "2025",
       duration: "2 months",
       skills: ["Accounting", "Financial Analysis"]
     },
@@ -20,14 +20,14 @@ const Education = () => {
     {
       name: "Meta Ads & Lead Generation Training",
       issuer: "Meta",
-      date: "2023",
+      date: "2024",
       duration: "2 months",
       skills: ["Digital Marketing", "Lead Generation", "Social Media Marketing"]
     },
     {
       name: "The Complete Financial Analyst Course",
       issuer: "Udemy",
-      date: "2022",
+      date: "2025",
       skills: ["Financial Analysis", "Valuation", "Financial Modeling"]
     },
     {
@@ -35,30 +35,12 @@ const Education = () => {
       issuer: "Credit Institute",
       date: "Pursuing",
       skills: ["Credit Management", "Risk Analysis"]
-    },
-    {
-      name: "Salesforce for Admins",
-      issuer: "LinkedIn",
-      date: "Jan 2025",
-      skills: ["Salesforce.com Administration"]
-    },
-    {
-      name: "Salesforce for Sales Managers",
-      issuer: "LinkedIn",
-      date: "Jan 2025",
-      skills: ["Salesforce.com"]
-    },
-    {
-      name: "Learning Zoho CRM",
-      issuer: "LinkedIn",
-      date: "Jan 2025",
-      skills: ["Zoho CRM"]
     }
   ];
 
   const education = [
     {
-      school: "Shanxi University of Finance and Economics",
+      school: "Shanxi University of Finance and Economics, China",
       degree: "Master of Business Administration - MBA, Business Administration, Management and Operations",
       period: "Sep 2019 - Jun 2021",
       grade: "3.4 GPA (84%)",
@@ -69,17 +51,24 @@ const Education = () => {
       ]
     },
     {
-      school: "Shaanxi University of Science and Technology",
+      school: "Shaanxi University of Science and Technology, China",
       degree: "Diploma of Education, Chinese Language and Literature",
       period: "Mar 2019 - Jul 2019",
       grade: "3.8 GPA (98%)",
       skills: ["Chinese"]
     },
     {
-      school: "Monad University",
+      school: "Monad University, India",
       degree: "Bachelor of Commerce - BCom, Business/Commerce, General",
       period: "Jun 2015 - Jul 2018",
       grade: "69.18%",
+      skills: []
+    },
+    {
+      school: "St. Joseph's School - India",
+      degree: "CBSC Board",
+      period: "Apr 2013 - Mar 2015",
+      grade: "6 CGPA",
       skills: []
     },
     {

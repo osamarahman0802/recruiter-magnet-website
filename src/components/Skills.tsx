@@ -36,7 +36,6 @@ const Skills = () => {
     {
       category: "Technical Skills",
       skills: [
-        "Salesforce", 
         "Zoho CRM", 
         "Supply Chain Management",
         "Import/Export Operations",

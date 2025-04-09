@@ -67,7 +67,7 @@ const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-to-tr from-gold to-softBlue opacity-30 blur-xl rounded-full animate-pulse"></div>
               <div className="relative rounded-full w-80 h-80 overflow-hidden border-2 border-white/30 shadow-xl backdrop-blur-sm">
                 <img 
-                  src="/lovable-uploads/94df2c31-edad-484c-b2be-40d44fcb865f.png"
+                  src="/lovable-uploads/5a8a93d6-e010-4f05-b8c8-3052828e958e.png"
                   alt="Osama Rahman"
                   className="object-cover w-full h-full"
                 />

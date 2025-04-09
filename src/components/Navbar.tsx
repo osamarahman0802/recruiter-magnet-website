@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Linkedin, Github, Mail } from 'lucide-react';
+import { Menu, X, Linkedin, Github, Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -113,6 +113,17 @@ const Navbar = () => {
             <Linkedin className="h-4 w-4" />
           </a>
           <a 
+            href="#"
+            aria-label="WeChat ID: OsamaRahman0802"
+            className="social-icon group relative"
+            title="WeChat ID: OsamaRahman0802"
+          >
+            <MessageCircle className="h-4 w-4" />
+            <span className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-navy/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
+              WeChat ID: OsamaRahman0802
+            </span>
+          </a>
+          <a 
             href="https://github.com/osamarahman0802" 
             target="_blank"
             rel="noopener noreferrer"
@@ -190,6 +201,17 @@ const Navbar = () => {
               className="social-icon"
             >
               <Linkedin className="h-5 w-5" />
+            </a>
+            <a 
+              href="#"
+              aria-label="WeChat ID: OsamaRahman0802"
+              className="social-icon relative group"
+              title="WeChat ID: OsamaRahman0802"
+            >
+              <MessageCircle className="h-5 w-5" />
+              <span className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 bg-navy/90 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
+                WeChat ID: OsamaRahman0802
+              </span>
             </a>
             <a 
               href="https://github.com/osamarahman0802" 
