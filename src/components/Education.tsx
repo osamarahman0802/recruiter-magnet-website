@@ -65,19 +65,19 @@ const Education = () => {
       skills: []
     },
     {
-      school: "St. Joseph's School - India",
-      degree: "CBSC Board",
-      period: "Apr 2013 - Mar 2015",
-      grade: "6 CGPA",
-      skills: []
-    },
-    {
       school: "Firayalal Public School - India",
       degree: "High School, Business/Commerce, General",
       period: "Apr 2013 - Mar 2015",
       grade: "64%",
       skills: []
     },
+    {
+      school: "St. Joseph's School - India",
+      degree: "CBSE Board",
+      period: "Mar 2003 - Feb 2013",
+      grade: "6 CGPA",
+      skills: []
+    }
   ];
   
   return (
@@ -170,3 +170,4 @@ const Education = () => {
 };
 
 export default Education;
+
